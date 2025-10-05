@@ -1,23 +1,16 @@
 # kotlin
+Проект по работе с ассинхронностью (прерываемыми функциями, задачами, шаблоном "Производитель-потребитель"), многопоточностью (пулы потоков, интерфейсы Runnable и Thread, побочные потоки, функции "Производитель" и "Потребитель"), аннотациями (стандартной библиотеки Kotlin и Java), рефлексией (добавление, изменение, удаление свойств, методов в класс), специализированными классами (class enum, data class, паттерн "Фабрика", паттерн "Строитель"), инкапсуляцией, абстрактным базовым классом, интерфейсами, функциями (указатели, декораторы, рекурсия, vararg) 
 
-This project uses [Gradle](https://gradle.org/).
-To build and run the application, use the *Gradle* tool window by clicking the Gradle icon in the right-hand toolbar,
-or run it directly from the terminal:
-
-* Run `./gradlew run` to build and run the application.
-* Run `./gradlew build` to only build the application.
-* Run `./gradlew check` to run all checks, including tests.
-* Run `./gradlew clean` to clean all build outputs.
-
-Note the usage of the Gradle Wrapper (`./gradlew`).
-This is the suggested way to use Gradle in production projects.
-
-[Learn more about the Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html).
-
-[Learn more about Gradle tasks](https://docs.gradle.org/current/userguide/command_line_interface.html#common_tasks).
-
-This project follows the suggested multi-module setup and consists of the `app` and `utils` subprojects.
-The shared build logic was extracted to a convention plugin located in `buildSrc`.
-
-This project uses a version catalog (see `gradle/libs.versions.toml`) to declare and version dependencies
-and both a build cache and a configuration cache (see `gradle.properties`).
+В этом проекте используется [Gradle](https://gradle.org/).
+Для сборки и запуска приложения используйте окно инструментов *Gradle*, щёлкнув по значку Gradle на правой панели инструментов,
+или запустите его непосредственно из терминала:
+* Выполните `./gradlew run` для сборки и запуска приложения.
+* Выполните `./gradlew build`, чтобы собрать только приложение.
+* Выполните `./gradlew check` для запуска всех проверок, включая тесты.
+* Выполните `./gradlew clean` для очистки всех результатов сборки.
+Обратите внимание на использование Gradle Wrapper (`./gradlew`).
+Это рекомендуемый способ использования Gradle в производственных проектах.
+Этот проект следует предлагаемой многомодульной схеме и состоит из подпроектов `app` и `utils`.
+Общая логика сборки была извлечена в плагин соглашения, расположенный в `buildSrc`.
+Этот проект использует каталог версий (см. `gradle/libs.versions.toml`) для объявления и управления версиями зависимостей,
+а также кэш сборки и кэш конфигурации (см. `gradle.properties`).
